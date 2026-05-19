@@ -15,6 +15,29 @@ namespace Proiect_MSOA
         public FormLogin()
         {
             InitializeComponent();
+            cmbRol.Items.Add("Admin");
+            cmbRol.Items.Add("Profesor");
+            cmbRol.Items.Add("Elev");
+            cmbRol.SelectedIndex = 0;
+
+            txtParola.UseSystemPasswordChar = true;
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+
+           
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            txtParola.UseSystemPasswordChar = !chkShowPassword.Checked;
         }
     }
 }
